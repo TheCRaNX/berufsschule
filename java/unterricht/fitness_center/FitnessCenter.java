@@ -1,11 +1,12 @@
-import java.util.Arrays;
-import java.util.Scanner;
+package java.unterricht.fitness_center;
+
 import java.util.ArrayList;
+import java.util.ListIterator;
 
 public class FitnessCenter {
     private String fitnessCenterName = "Heinrich's Gym";
 
-    private ArrayList<String> kundenIdsListe = new ArrayList<String>(); 
+    private ArrayList<Kunde> kundenListe = new ArrayList<Kunde>(); 
     private int naechsteKundenId = 1000;
 
     public FitnessCenter(String fitnesscenterName) {
@@ -21,6 +22,8 @@ public class FitnessCenter {
 
         Kunde neuKunde = new Kunde(neuKundeId, kundeName, kundeGewicht, kundeGroesse);
 
+        kundenListe.add(neuKunde);
+
         return neuKunde;
     }
 
@@ -28,6 +31,21 @@ public class FitnessCenter {
         Kunde neuKunde = new Kunde(kundeName);
 
         return neuKunde;
+    }
+
+    public Kunde loescheKunde(String kundeId) {
+        Kunde kunde = null;
+
+        ListIterator<Kunde> iter = kundenListe.listIterator();
+
+        while(iter.hasNext()) {
+            if(iter.next().getID().equals((kundeId))) {
+                iter.remove();
+            }
+            break;
+        }
+
+        return kunde;        
     }
 
     private int countNaechsteKundenID() {

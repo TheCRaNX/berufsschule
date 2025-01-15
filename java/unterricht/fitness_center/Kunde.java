@@ -35,6 +35,10 @@ public class Kunde {
         return kundeWertkarte;
     }
 
+    public String getID() {
+        return kundeID;
+    }
+
     public void setWertkarte(Wertkarte kundeWertkarte) {
         this.kundeWertkarte = kundeWertkarte;
     }
