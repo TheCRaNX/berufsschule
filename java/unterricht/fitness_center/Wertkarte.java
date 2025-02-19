@@ -3,12 +3,16 @@ package java.unterricht.fitness_center;
 import java.time.LocalTime;
 
 public class Wertkarte {
-    private double guthaben = 50;
+    private double guthaben;
 
-    Wertkarte() {
+    public static final double saunaNormal = 15.00;
+    public static final double saunaHappyHour = 12.00;
+
+    public Wertkarte() {
+        this.guthaben = 50;
     }
 
-    Wertkarte(double guthaben) {
+    public Wertkarte(double guthaben) {
         this.guthaben = guthaben;
     }
 
@@ -16,36 +20,27 @@ public class Wertkarte {
         return guthaben;
     }
 
-    public double aufladen(double betrag) {
-        guthaben = guthaben + betrag;
-
-        return guthaben;
+    public void aufladen(double betrag) {
+        guthaben += betrag;
     }
 
-    public double abbuchenSauna() {
+    public boolean abbuchenSauna() {
         Utils utils = new Utils();
-        final LocalTime currentTime = utils.getCurrentTime();
-        
+        LocalTime currentTime = utils.getCurrentTime();
+
         final LocalTime rabattZeitStart = LocalTime.of(8, 00);
         final LocalTime rabattZeitEnde = LocalTime.of(12, 00);
 
-        double saunaKosten = 15.00;
-        double saunaRabatt = 0.2;
-
+        double saunaKosten = saunaNormal;
         if (currentTime.isAfter(rabattZeitStart) && currentTime.isBefore(rabattZeitEnde)) {
-            saunaKosten = saunaKosten * saunaRabatt;
+            saunaKosten = saunaHappyHour;
         }
 
-        guthaben = abbuchen(saunaKosten);
-
-        return guthaben;
+        if (guthaben >= saunaKosten) {
+            guthaben -= saunaKosten;
+            return true;
+        } else {
+            return false;
+        }
     }
-
-    private double abbuchen(double betrag) {
-        guthaben = guthaben - betrag;
-
-        return guthaben;
-    }
-
-
 }

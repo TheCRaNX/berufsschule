@@ -7,46 +7,35 @@ public class Kunde {
     private double kundeGroesse;
     private Wertkarte kundeWertkarte;
 
-    public Kunde (
-        String kundeID,
-        String kundeName,
-        double kundeGewicht,
-        double kundeGroesse
-    ) {
+    public Kunde(String kundeID, String kundeName, double kundeGewicht, double kundeGroesse) {
         this.kundeID = kundeID;
         this.kundeName = kundeName;
         this.kundeGewicht = kundeGewicht;
         this.kundeGroesse = kundeGroesse;
     }
 
-    public Kunde (
-        String kundeID,
-        String kundeName
-    ) {
+    public Kunde(String kundeID, String kundeName) {
         this.kundeID = kundeID;
         this.kundeName = kundeName;
     }
 
-    public Kunde (String csvString) {
-        
+    public String getId() {
+        return kundeID;
+    }
+
+    public String getKundeName() {
+        return kundeName;
     }
 
     public Wertkarte getWertkarte() {
         return kundeWertkarte;
     }
 
-    public String getID() {
-        return kundeID;
+    public void setWertkarte(Wertkarte wertkarte) {
+        this.kundeWertkarte = wertkarte;
     }
 
-    public void setWertkarte(Wertkarte kundeWertkarte) {
-        this.kundeWertkarte = kundeWertkarte;
-    }
-
-    public double berechneBMI(
-        double kundeGewicht,
-        double kundeGroesse
-    ) {
-        return kundeGewicht / Double.valueOf((kundeGroesse * 2));
+    public double berechneBMI() {
+        return kundeGewicht / (kundeGroesse * kundeGroesse);
     }
 }
