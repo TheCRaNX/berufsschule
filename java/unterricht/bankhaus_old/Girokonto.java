@@ -1,4 +1,4 @@
-package bankhaus;
+package bankhaus_old;
 
 public class Girokonto {
     private String inhaber;
