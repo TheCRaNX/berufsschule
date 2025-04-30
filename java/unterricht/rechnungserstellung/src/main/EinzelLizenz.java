@@ -1,4 +1,4 @@
-package rechnungserstellung;
+package rechnungserstellung.src.main;
 
 public class EinzelLizenz extends Artikel{
     private double pricePercentage = 0.1;

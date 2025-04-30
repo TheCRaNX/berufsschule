@@ -1,4 +1,4 @@
-package zeitdauer;
+package zeitdauer.main.src;
 
 
 public class Zeitdauer {

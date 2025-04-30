@@ -1,4 +1,4 @@
-package datumsprüfer;
+package datumsprüfer.src.main;
 
 import java.util.Scanner;
 

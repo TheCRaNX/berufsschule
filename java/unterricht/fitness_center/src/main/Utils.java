@@ -1,4 +1,4 @@
-package java.unterricht.fitness_center;
+package fitness_center.src.main;
 
 import java.time.LocalTime;
 import java.time.format.DateTimeFormatter;

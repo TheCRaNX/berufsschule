@@ -1,4 +1,4 @@
-package bankhaus.V2;
+package bankhaus.V2.src.main;
 
 public class GiroKonto extends Konto {
     private int transaktionen;

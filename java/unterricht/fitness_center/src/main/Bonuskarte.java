@@ -1,4 +1,4 @@
-package java.unterricht.fitness_center;
+package fitness_center.src.main;
 
 public class Bonuskarte extends Wertkarte {
     private int bonusPunkte;

@@ -1,4 +1,4 @@
-package rechnungserstellung;
+package rechnungserstellung.src.main;
 
 public class Artikel {
     private int nummer;
