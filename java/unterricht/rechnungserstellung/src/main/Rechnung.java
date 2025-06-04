@@ -5,7 +5,7 @@ import java.util.List;
 import java.util.ListIterator;
 
 public class Rechnung {
-    private List<Artikel> artikelListe = new ArrayList<>();
+    private List<Artikel> artikelListe = new ArrayList<Artikel>();
     private Kunde kunde;
     
     public Rechnung (Kunde kunde) {
