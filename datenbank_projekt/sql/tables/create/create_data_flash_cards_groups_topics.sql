@@ -19,7 +19,7 @@ create table data_flash_cards_groups_topics (
         foreign key (flash_card_topic_id) references data_flash_cards_topics(flash_card_topic_id)
         on update cascade
         on delete cascade
-) comment = 'Table to store flash cards groups topics data';
+) comment = 'Table to store flash cards groups topics mapping';
 
 create  unique index idx_data_flash_cards_groups_topics_unique_group_topic on data_flash_cards_groups_topics (flash_card_group_id, flash_card_topic_id);
 
