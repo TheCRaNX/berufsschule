@@ -5,9 +5,9 @@ create table data_flash_cards_groups (
     last_updated_by               varchar(256) default 'KARTEGO_DATABASE' comment 'User who last updated this record',
     last_update_date              timestamp default current_timestamp on update current_timestamp comment 'Timestamp when the user was last updated',
 
+    user_id                       int comment 'Id of the user who created the flash card group. Foreign key from cmn_users',
     group_name      	          varchar(512) comment 'Name for the flash card group',
     description                   text comment 'Description for the flash card group',
-    user_id                       int comment 'Id of the user who created the flash card group. Foreign key from cmn_users',
     public_flag                   varchar(1) check(public_flag in ('Y', 'N')) comment 'Public flag for flash card group',
     parent_flash_card_group_id    int comment 'Parent flash card group id for flash card group. Foreign key from data_flash_cards_groups',
     
@@ -24,6 +24,6 @@ create table data_flash_cards_groups (
         on delete cascade
 ) comment = 'Table to store flash cards groups data';
 
-create  index idx_data_flash_cards_groups_group_name on data_flash_cards_groups (group_name);
-
 create  index idx_data_flash_cards_groups_user_id on data_flash_cards_groups (user_id);
+
+create  index idx_data_flash_cards_groups_group_name on data_flash_cards_groups (group_name);

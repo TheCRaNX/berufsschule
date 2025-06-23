@@ -5,8 +5,8 @@ create table data_flash_cards_categories (
     last_updated_by                     varchar(256) default 'KARTEGO_DATABASE' comment 'User who last updated this record',
     last_update_date                    timestamp default current_timestamp on update current_timestamp comment 'Timestamp when the user was last updated',
     
-    category_name      	                varchar(512) not null comment 'Name for the flash card category',
     user_id                             int not null comment 'Id of the user who created the flash card topic. Foreign key from cmn_users',
+    category_name      	                varchar(512) not null comment 'Name for the flash card category',
     parent_flash_card_category_id       int comment 'Id of the parent category. Foreign key from data_flash_cards_categories',
     
     constraint data_flash_cards_categories_pk primary key (flash_card_category_id),
@@ -22,6 +22,7 @@ create table data_flash_cards_categories (
         on delete cascade
 ) comment = 'Table to store flash cards categories data';
 
+create  index idx_data_flash_cards_categories_user_id on data_flash_cards_categories (user_id);
 
 create  index idx_data_flash_cards_categories_category_name on data_flash_cards_categories (category_name);
 
