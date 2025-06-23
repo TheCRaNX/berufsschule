@@ -1,8 +1,8 @@
 create table cmn_parties(
     party_id                int auto_increment not null comment 'Unique identifier for the party',
-    created_by              varchar(256) not null default 'LERN_DATABASE' comment 'User who created this record',
+    created_by              varchar(256) not null default 'KARTEGO_DATABASE' comment 'User who created this record',
     creation_date           timestamp not null default current_timestamp comment 'Timestamp when the user was created',
-    last_updated_by         varchar(256) default 'LERN_DATABASE' comment 'User who last updated this record',
+    last_updated_by         varchar(256) default 'KARTEGO_DATABASE' comment 'User who last updated this record',
     last_update_date        timestamp default current_timestamp on update current_timestamp comment 'Timestamp when the user was last updated',
     
     party_name              varchar(256) not null comment 'Partyname for the user',

@@ -1,13 +1,13 @@
 create table data_flash_cards_topics (
     flash_card_topic_id                 int auto_increment not null comment 'Unique identifier for the flashcard topic',
-    created_by                          varchar(256) not null default 'LERN_DATABASE' comment 'User who created this record',
+    created_by                          varchar(256) not null default 'KARTEGO_DATABASE' comment 'User who created this record',
     creation_date                       timestamp not null default current_timestamp comment 'Timestamp when the user was created',
-    last_updated_by                     varchar(256) default 'LERN_DATABASE' comment 'User who last updated this record',
+    last_updated_by                     varchar(256) default 'KARTEGO_DATABASE' comment 'User who last updated this record',
     last_update_date                    timestamp default current_timestamp on update current_timestamp comment 'Timestamp when the user was last updated',
     
     topic_name      	                varchar(512) not null comment 'Name for the flash card topic',
     description                         text comment 'Description for the flash card topic',
-    user_id                             int not null comment 'Id of the user who created the flash card topic',
+    user_id                             int not null comment 'Id of the user who created the flash card topic. Foreign key from cmn_users',
     public_flag                         varchar(1) not null check(public_flag in ('Y', 'N')) comment 'Public flag for flash card topic',
     
     constraint data_flash_cards_topics_pk primary key (flash_card_topic_id),
