@@ -14,7 +14,7 @@ create table data_motorraeder (
     leistung_kw                             int comment 'Leistung (kw) des Motorrads',
     drehmoment_nm                           int comment 'Drehmoment (nm) des Motorrads',
     0_auf_100_s                             int comment 'Beschleuniging von 0 auf 100km/h (s) des Motorrads',
-    hoechstgeschwindigkeit_khm              int comment 'Höchstgeschwindigkeit (km/h) des Motorrads',
+    hoechstgeschwindigkeit_kmh              int comment 'Höchstgeschwindigkeit (km/h) des Motorrads',
     verbrauch_kml                           int comment 'Verbrauch (kilometer/liter) des Motorrads',
     laenge_mm                               int comment 'Größe (mm) des Motorrads',
     breite_mm                               int comment 'Breite (mm) des Motorrads',
@@ -61,7 +61,7 @@ create index idx_data_motorraeder_verbrauch_kml on data_motorraeder (verbrauch_k
 
 create index idx_data_motorraeder_0_auf_100_s on data_motorraeder (0_auf_100_s);
 
-create index idx_data_motorraeder_hoechstgeschwindigkeit_khm on data_motorraeder (hoechstgeschwindigkeit_khm);
+create index idx_data_motorraeder_hoechstgeschwindigkeit_kmh on data_motorraeder (hoechstgeschwindigkeit_kmh);
 
 create index idx_data_motorraeder_sitzhoehe_mm on data_motorraeder (sitzhoehe_mm);
 

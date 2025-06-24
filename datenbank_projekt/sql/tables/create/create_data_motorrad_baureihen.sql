@@ -13,7 +13,7 @@ create table data_motorrad_baureihen (
     hubraum_ccm                             int not null comment 'Hubraum der Motorrad Baureihe',
     baujahr_beginn                          int comment 'Baurjahr beginn der Motorrad Baureihe',
     baujahr_ende                            int comment 'Baurjahr ende der Motorrad Baureihe',
-    nachfolger_id                           int comment 'Nachfolger der Motorrad Baureihe. Fremdschlüssel von data_motorrad_baureihen'
+    nachfolger_id                           int comment 'Nachfolger der Motorrad Baureihe. Fremdschlüssel von data_motorrad_baureihen',
 
     
     constraint data_motorrad_baureihen_pk primary key (motorrad_baureihe_id),
