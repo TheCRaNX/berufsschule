@@ -69,4 +69,34 @@ insert into data_motorrad_baureihen (
     2015,                                           -- baujahr_beginn
     null,                                           -- baujahr_ende
     4                                               -- nachfolger_id    
+), (
+    7,                                              -- motorrad_baureihe_id
+    3,                                              -- hersteller_id
+    'S-Baureihe',                                   -- bezeichnung
+    'Alle S-Maschinen haben einen Vierzylinder-Reihenmotor und vier Ventile pro Zylinder. Sie sind auf extreme Sportlichkeit gezüchtet und als Tourenmotorräder mangels Gepäckmöglichkeiten fast nicht zu nutzen. Ihr Revier ist das anspruchsvolle Landstraßen-Fahren und die Rennstrecke.',
+    'V4',                                           -- motorytyp
+    999,                                            -- hubraum_ccm
+    2009,                                           -- baujahr_beginn
+    null,                                           -- baujahr_ende
+    null                                            -- nachfolger_id    
+), (
+    8,                                              -- motorrad_baureihe_id
+    5,                                              -- hersteller_id
+    'Panigale V4S'                                  -- bezeichnung
+    'Form und Funktion verschmelzen zu einem neuen Level an Performance – weit über die bloße Summe moderner Technologien hinaus. Die neue Panigale V4 ist das Serienmotorrad, das der MotoGP am nächsten kommt. Mit technischen Lösungen direkt aus der Weltmeisterklasse bringt sie ein Fahrerlebnis auf die Straße, das dem der Profis erstaunlich nahekommt.',
+    'V4',                                           -- motorytyp
+    1103,                                           -- hubraum_ccm
+    2018,                                           -- baujahr_beginn
+    null,                                           -- baujahr_ende
+    null                                            -- nachfolger_id    
+), (
+    9,                                              -- motorrad_baureihe_id
+    6,                                              -- hersteller_id
+    'Sportster S'                                   -- bezeichnung
+    'Das Herz der Sportster® S ist der mächtige, leistungsstarke Revolution® Max 1250T Motor, der mit 90 kW bei 7500 U/min und 125 Nm Drehmoment für Begeisterung sorgt. Mit elektronischer Fahrerassistenz, optimiertem Handling und niedrigem Gewicht dreht sich bei dieser Sportster der nächsten Generation alles um Performance anstatt um Zurückhaltung.',
+    'V2',                                           -- motorytyp
+    1252,                                           -- hubraum_ccm
+    2021,                                           -- baujahr_beginn
+    null,                                           -- baujahr_ende
+    null                                            -- nachfolger_id    
 );

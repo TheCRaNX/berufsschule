@@ -138,4 +138,64 @@ insert into data_motorraeder(
     836,                                                                    -- sitzhoehe_mm
     211,                                                                    -- gewicht_kg
     20999.00                                                                -- preis_euro
+), (
+    7,                                                                      -- motorrad_id
+
+    3,                                                                      -- motorrad_hersteller_id
+    7,                                                                      -- motorrad_baureihe_id
+    1,                                                                      -- motorrad_kategorie_id
+
+    'BMW S100RR',                                                           -- name
+    2025,                                                                   -- baujahr
+    154,                                                                    -- leistung_kw
+    3.1,                                                                    -- 0_auf_100_s
+    303,                                                                    -- hoechstgeschwindigkeit_kmh
+    13.8,                                                                   -- verbrauch_kml
+    121,                                                                    -- drehmoment_nm
+    2073,                                                                   -- laenge_mm
+    545,                                                                    -- breite_mm
+    1205,                                                                   -- hoehe_mm
+    832,                                                                    -- sitzhoehe_mm
+    185,                                                                    -- gewicht_kg
+    20890.00                                                                -- preis_euro
+), (
+    8,                                                                      -- motorrad_id
+
+    5,                                                                      -- motorrad_hersteller_id
+    8,                                                                      -- motorrad_baureihe_id
+    1,                                                                      -- motorrad_kategorie_id
+
+    'Ducati Panigale V4S',                                                  -- name
+    2025,                                                                   -- baujahr
+    158.9,                                                                  -- leistung_kw
+    3.1,                                                                    -- 0_auf_100_s
+    303,                                                                    -- hoechstgeschwindigkeit_kmh
+    15.38,                                                                  -- verbrauch_kml
+    120.9,                                                                  -- drehmoment_nm
+    null,                                                                   -- laenge_mm
+    null,                                                                   -- breite_mm
+    null,                                                                   -- hoehe_mm
+    850,                                                                    -- sitzhoehe_mm
+    187,                                                                    -- gewicht_kg
+    34790.00                                                                -- preis_euro
+), (
+    9,                                                                      -- motorrad_id
+
+    6,                                                                      -- motorrad_hersteller_id
+    8,                                                                      -- motorrad_baureihe_id
+    1,                                                                      -- motorrad_kategorie_id
+
+    'Harley Davidson Sporster S',                                           -- name
+    2025,                                                                   -- baujahr
+    90,                                                                     -- leistung_kw
+    3.6,                                                                    -- 0_auf_100_s
+    200,                                                                    -- hoechstgeschwindigkeit_kmh
+    19.6,                                                                   -- verbrauch_kml
+    120.9,                                                                  -- drehmoment_nm
+    2270,                                                                   -- laenge_mm
+    840,                                                                    -- breite_mm
+    null,                                                                   -- hoehe_mm
+    765,                                                                    -- sitzhoehe_mm
+    228,                                                                    -- gewicht_kg
+    17570.00                                                                -- preis_euro
 );

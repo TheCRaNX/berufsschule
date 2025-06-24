@@ -42,4 +42,12 @@ insert into data_motorrad_kategorien (
     10,
     'Chopper',
     'Chopper sind speziell gestaltete Cruiser mit verlängerten Vorderrädern, tiefen Sitzpositionen und auffälligem Design.'
+), (
+    11,
+    'Grand American Touring',
+    'Grand American Touring ist eine Kategorie von Harley-Davidson Motorrädern, die für lange Strecken und komfortables Reisen konzipiert ist. Diese Modelle zeichnen sich durch ihren kräftigen Milwaukee-Eight V-Twin Motor, komfortable Federung, geräumige Koffer und fortschrittliche Infotainmentsysteme aus. Sie bieten eine Mischung aus Leistung, Komfort und Stil für ausgedehnte Touren.'
+), (
+    12,
+    'Trikes',
+    'Ein Motorrad-Trike ist ein dreirädriges Kraftfahrzeug, das Elemente von Motorrädern und Autos kombiniert. Es verfügt in der Regel über ein einzelnes Vorderrad und zwei Hinterräder, die eine größere Stabilität als bei einem herkömmlichen Motorrad bieten.'
 );
