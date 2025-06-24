@@ -1,6 +1,6 @@
 insert into data_motorrad_baureihen (
     motorrad_baureihe_id,
-    hersteller_id,
+    motorrad_hersteller_id,
     bezeichnung,
     beschreibung,
     motorytyp,
@@ -10,41 +10,40 @@ insert into data_motorrad_baureihen (
     nachfolger_id
 ) values (
     1,                                              -- motorrad_baureihe_id
-    1                                               -- hersteller_id
+    1,                                              -- hersteller_id
     'Texas Chopper',                                -- bezeichnung
     '',
     'V2',                                           -- motorytyp
     1840,                                           -- hubraum_ccm
     null,                                           -- baujahr_beginn
     null,                                           -- baujahr_ende
-    null,                                           -- nachfolger_id
+    null                                            -- nachfolger_id
 ), (
     2,                                              -- motorrad_baureihe_id
-    2                                               -- hersteller_id
+    2,                                              -- hersteller_id
     'RSV4',                                         -- bezeichnung
-    '',
     'Die RSV4 ist das Superbike von Aprilia und bietet das ultimative Aprilia Rennerlebnis. Sie ist für die Straße zugelassen und mit 220 PS die stärkste ihrer Kategorie. Dank der fortschrittlichen Aerodynamik und des Fahrwerks, dem Ergebnis jahrelanger Entwicklung, kann die gesamte Leistung mit millimetergenauer Stabilität und Kontrolle genutzt werden.  Sie ist die Königin des Asphalts, aber auf der Rennstrecke kommt ihre wahre Natur zum Vorschein.',
     'V4',                                           -- motorytyp
-    1099                                            -- hubraum_ccm
+    1099,                                           -- hubraum_ccm
     2009,                                           -- baujahr_beginn
-    null                                            -- baujahr_ende
-    null,                                           -- nachfolger_id
+    null,                                           -- baujahr_ende
+    null                                            -- nachfolger_id
 ),  (
     3,                                              -- motorrad_baureihe_id
-    2                                               -- hersteller_id
-    'RSV4 Factory',                                         -- bezeichnung
-    '',
+    2,                                              -- hersteller_id
+    'RSV4 Factory',                                 -- bezeichnung
     'Die Aprilia RSV4 Factory ist das leistungsstärkste, bestausgestattete und extremste Superbike aller Zeiten und bringt Leistung und Technologie an die Spitze der Kategorie. Der stärkste homologierte 220 PS Motor der Welt, die voll ausgestattete a-PRC (Aprilia Performance Ride Control) Elektronik, das premium Öhlins Smart EC 2.0 Fahrwerk, das atemberaubende Design und die im Windkanal entwickelte funktionale Aerodynamik sorgen für ein kompromissloses Fahrerlebnis. ',
     'V4',                                           -- motorytyp
-    1099                                            -- hubraum_ccm
+    1099,                                            -- hubraum_ccm
     2009,                                           -- baujahr_beginn
-    null                                            -- baujahr_ende
-    null,                                           -- nachfolger_id
+    null,                                           -- baujahr_ende
+    null                                            -- nachfolger_id
 ), (
     4,                                              -- motorrad_baureihe_id
     2,                                              -- hersteller_id
     'Tuono V4 APRC',                                -- bezeichnung
-    '',
+    'Übersicht mit KI
+    Die Aprilia Tuono V4 APRC ist ein Naked Bike, das für seine aggressive Leistung und fortschrittliche Elektronik bekannt ist. Sie basiert auf der Aprilia RSV4, einem Superbike, und bietet ein aufrechtes Fahrerlebnis mit Rennsport-Feeling. Herzstück ist der 65-Grad-V4-Motor, der mit seinen 167 PS und 111 Nm Drehmoment für ordentlich Vortrieb sorgt.',
     'V4',                                           -- motorytyp
     999,                                            -- hubraum_ccm
     2001,                                           -- baujahr_beginn
@@ -61,7 +60,7 @@ insert into data_motorrad_baureihen (
     null,                                           -- baujahr_ende
     4                                               -- nachfolger_id    
 ), (
-    5,                                              -- motorrad_baureihe_id
+    6,                                              -- motorrad_baureihe_id
     2,                                              -- hersteller_id
     'Tuono V4 1100 Factory',                        -- bezeichnung
     'Die Aprilia Tuono V4 Factory ist die ultimative Hyper-Naked – ein echter Supersport-Killer mit der perfekten Kombination aus Aggressivität, Leistung und absoluter Kontrolle. Auch auf der Rennstrecke ist sie unschlagbar, dank der semiaktiven Öhlins-Federung, des 180 PS starken V4-Motors der Euro-5+-Norm, einer ausgeklügelten Aerodynamik und der fortschrittlichen a-PRC-Elektronik mit prädiktiver Steuerung.',

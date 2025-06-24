@@ -10,16 +10,14 @@ insert into data_motorraeder(
     leistung_kw,
     drehmoment_nm,
     0_auf_100_s,
-    hoechgeschwindigkeit_kmh,
+    hoechstgeschwindigkeit_kmh,
     verbrauch_kml,
     laenge_mm,
     breite_mm,
     hoehe_mm,
     sitzhoehe_mm,
     gewicht_kg,
-    preis_euro,
-    bild,
-    bild_mime,
+    preis_euro
 ) values (
     1,                                                                      -- motorrad_id
 
@@ -40,7 +38,7 @@ insert into data_motorraeder(
     641,                                                                    -- sitzhoehe_mm
     318.4,                                                                  -- gewicht_kg
     28000.00                                                                -- preis_euro
-), values (
+), (
     2,                                                                      -- motorrad_id
 
     2,                                                                      -- motorrad_hersteller_id
@@ -60,11 +58,11 @@ insert into data_motorraeder(
     845,                                                                    -- sitzhoehe_mm
     202,                                                                    -- gewicht_kg
     21999.00                                                                -- preis_euro
-), values (
+), (
     3,                                                                      -- motorrad_id
 
     2,                                                                      -- motorrad_hersteller_id
-    2,                                                                      -- motorrad_baureihe_id
+    3,                                                                      -- motorrad_baureihe_id
     1,                                                                      -- motorrad_kategorie_id
 
     'Aprilla RSV4 Factory 1100',                                            -- name
@@ -80,32 +78,32 @@ insert into data_motorraeder(
     845,                                                                    -- sitzhoehe_mm
     202,                                                                    -- gewicht_kg
     26999.00                                                                -- preis_euro
-), values (
-    3,                                                                      -- motorrad_id
+), (
+    4,                                                                      -- motorrad_id
 
     2,                                                                      -- motorrad_hersteller_id
-    2,                                                                      -- motorrad_baureihe_id
-    1,                                                                      -- motorrad_kategorie_id
+    4,                                                                      -- motorrad_baureihe_id
+    6,                                                                      -- motorrad_kategorie_id
 
-    'Aprilla RSV4 1100 Factory',                                            -- name
-    2025,                                                                   -- baujahr
-    161,                                                                    -- leistung_kw
+    'Tuono V4 APRC',                                                        -- name
+    2014,                                                                   -- baujahr
+    125,                                                                    -- leistung_kw
     3.2,                                                                    -- 0_auf_100_s
-    320,                                                                    -- hoechstgeschwindigkeit_kmh
-    15.38,                                                                  -- verbrauch_kml
-    125,                                                                    -- drehmoment_nm
-    2055,                                                                   -- laenge_mm
-    735,                                                                    -- breite_mm
-    1420,                                                                   -- hoehe_mm
-    845,                                                                    -- sitzhoehe_mm
-    202,                                                                    -- gewicht_kg
-    26999.00                                                                -- preis_euro
-), values (
-    2,                                                                      -- motorrad_id
+    249,                                                                    -- hoechstgeschwindigkeit_kmh
+    10,                                                                     -- verbrauch_kml
+    113,                                                                    -- drehmoment_nm
+    2065,                                                                   -- laenge_mm
+    800,                                                                    -- breite_mm
+    1090,                                                                   -- hoehe_mm
+    825,                                                                    -- sitzhoehe_mm
+    195,                                                                    -- gewicht_kg
+    15703.00                                                                -- preis_euro
+), (
+    5,                                                                      -- motorrad_id
 
     2,                                                                      -- motorrad_hersteller_id
-    2,                                                                      -- motorrad_baureihe_id
-    1,                                                                      -- motorrad_kategorie_id
+    5,                                                                      -- motorrad_baureihe_id
+    6,                                                                      -- motorrad_kategorie_id
 
     'Aprilia Tuono V4 1100',                                                -- name
     2025,                                                                   -- baujahr
@@ -120,12 +118,12 @@ insert into data_motorraeder(
     836,                                                                    -- sitzhoehe_mm
     211,                                                                    -- gewicht_kg
     17999.00                                                                -- preis_euro
-), values (
-    3,                                                                      -- motorrad_id
+), (
+    6,                                                                      -- motorrad_id
 
     2,                                                                      -- motorrad_hersteller_id
-    2,                                                                      -- motorrad_baureihe_id
-    1,                                                                      -- motorrad_kategorie_id
+    6,                                                                      -- motorrad_baureihe_id
+    6,                                                                      -- motorrad_kategorie_id
 
     'Aprilia Tuono V4 1100 Factory',                                        -- name
     2025,                                                                   -- baujahr
