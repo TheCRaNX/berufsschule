@@ -182,10 +182,30 @@ insert into data_motorraeder(
     9,                                                                      -- motorrad_id
 
     6,                                                                      -- motorrad_hersteller_id
-    8,                                                                      -- motorrad_baureihe_id
-    1,                                                                      -- motorrad_kategorie_id
+    9,                                                                      -- motorrad_baureihe_id
+    4,                                                                      -- motorrad_kategorie_id
 
     'Harley Davidson Sporster S',                                           -- name
+    2025,                                                                   -- baujahr
+    90,                                                                     -- leistung_kw
+    3.6,                                                                    -- 0_auf_100_s
+    200,                                                                    -- hoechstgeschwindigkeit_kmh
+    19.6,                                                                   -- verbrauch_kml
+    120.9,                                                                  -- drehmoment_nm
+    2270,                                                                   -- laenge_mm
+    840,                                                                    -- breite_mm
+    null,                                                                   -- hoehe_mm
+    765,                                                                    -- sitzhoehe_mm
+    228,                                                                    -- gewicht_kg
+    17570.00                                                                -- preis_euro
+), (
+    10,                                                                      -- motorrad_id
+
+    7,                                                                      -- motorrad_hersteller_id
+    11,                                                                     -- motorrad_baureihe_id
+    1,                                                                      -- motorrad_kategorie_id
+
+    'Honda CBR 100 RR Fireblade',                                           -- name
     2025,                                                                   -- baujahr
     90,                                                                     -- leistung_kw
     3.6,                                                                    -- 0_auf_100_s

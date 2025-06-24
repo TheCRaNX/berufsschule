@@ -99,4 +99,24 @@ insert into data_motorrad_baureihen (
     2021,                                           -- baujahr_beginn
     null,                                           -- baujahr_ende
     null                                            -- nachfolger_id    
+), (
+    10,                                             -- motorrad_baureihe_id
+    7,                                              -- hersteller_id
+    'CBR 900 RR',                                   -- bezeichnung
+    'Der Name Fireblade steht für eine ganze Motorrad-Baureihe, welche 1992 mit der CBR 900 RR Fireblade begründet wurde. Seit 2004 hat sich der Name hubraumbedingt in CBR 1000 RR Fireblade geändert, wobei Honda die Verkaufsbezeichnung in Deutschland mittlerweile auf Fireblade reduziert hat.',
+    'R4',                                           -- motorytyp
+    899,                                            -- hubraum_ccm
+    1992,                                           -- baujahr_beginn
+    2004,                                           -- baujahr_ende
+    null                                            -- nachfolger_id    
+), (
+    11,                                             -- motorrad_baureihe_id
+    7,                                              -- hersteller_id
+    'CBR 1000 RR',                                  -- bezeichnung
+    'Kein Zweifel, die Heimat der CBR1000RR-R Fireblade SP ist die Rennstrecke. Sie startet in der gleichen Klasse wie die normale Fireblade, unterscheidet sich von dieser jedoch durch Öhlins Smart Electronic Control (S-EC)-Fahrwerk, den Brembo-Hauptzylinder, den Bremshebel, die vorderen und hinteren Bremssättel und den serienmäßigen Quickshifter. Der Motor mit „Semi-Cam“-Nockenwellenantrieb zeichnet sich durch eine in dieser Klasse unerreichte Spitzenleistung von 160 kW aus und sorgt jetzt im unteren und mittleren Drehzahlbereich für ein noch höhere Beschleunigung. Auch die HSTC-Traktionskontrolle (Honda Selectable Torque Control) wurde überarbeitet. Die mit einer Lichtanlage, Blinkern und SMART Key ausgestattete Fireblade SP ist uneingeschränkt straßenzugelassen – und trotzdem ein ultimatives Rennmotorrad. Eines, das den Adrenalinspiegel in jeder Kurve in die Höhe schnellen lässt.',
+    'R4',                                           -- motorytyp
+    999,                                            -- hubraum_ccm
+    2004,                                           -- baujahr_beginn
+    null,                                           -- baujahr_ende
+    10                                              -- nachfolger_id    
 );
