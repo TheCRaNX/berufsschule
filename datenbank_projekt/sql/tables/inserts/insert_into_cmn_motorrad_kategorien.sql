@@ -50,4 +50,8 @@ insert into data_motorrad_kategorien (
     12,
     'Trikes',
     'Ein Motorrad-Trike ist ein dreirädriges Kraftfahrzeug, das Elemente von Motorrädern und Autos kombiniert. Es verfügt in der Regel über ein einzelnes Vorderrad und zwei Hinterräder, die eine größere Stabilität als bei einem herkömmlichen Motorrad bieten.'
+), (
+    13,
+    'Ultimate Sport Bike',
+    'Die "Ultimate Sportbike"-Kategorie steht für das Extremste, was der Straßen- und Rennsportbereich zu bieten hat. Diese Motorräder sind leistungsoptimiert, aerodynamisch designt und technologisch hochentwickelt – gebaut für maximale Geschwindigkeit, Beschleunigung und Kurvenperformance.'
 );
