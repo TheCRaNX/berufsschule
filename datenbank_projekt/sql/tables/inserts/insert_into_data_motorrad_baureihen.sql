@@ -9,6 +9,106 @@ insert into data_motorrad_baureihen (
     baujahr_ende,
     vorgaenger_id
 ) values (
+    1,                                              -- motorrad_baureihe_id
+    1,                                              -- motorrad_hersteller_id
+    'Texas Chopper',                                -- bezeichnung
+    '',
+    'V2',                                           -- motorytyp
+    1840,                                           -- hubraum_ccm
+    null,                                           -- baujahr_beginn
+    null,                                           -- baujahr_ende
+    null                                            -- vorgaenger_id
+), (
+    2,                                              -- motorrad_baureihe_id
+    2,                                              -- motorrad_hersteller_id
+    'RSV4',                                         -- bezeichnung
+    'Die RSV4 ist das Superbike von Aprilia und bietet das ultimative Aprilia Rennerlebnis. Sie ist für die Straße zugelassen und mit 220 PS die stärkste ihrer Kategorie. Dank der fortschrittlichen Aerodynamik und des Fahrwerks, dem Ergebnis jahrelanger Entwicklung, kann die gesamte Leistung mit millimetergenauer Stabilität und Kontrolle genutzt werden.  Sie ist die Königin des Asphalts, aber auf der Rennstrecke kommt ihre wahre Natur zum Vorschein.',
+    'V4',                                           -- motorytyp
+    1099,                                           -- hubraum_ccm
+    2009,                                           -- baujahr_beginn
+    null,                                           -- baujahr_ende
+    null                                            -- vorgaenger_id
+),  (
+    3,                                              -- motorrad_baureihe_id
+    2,                                              -- motorrad_hersteller_id
+    'RSV4 Factory',                                 -- bezeichnung
+    'Die Aprilia RSV4 Factory ist das leistungsstärkste, bestausgestattete und extremste Superbike aller Zeiten und bringt Leistung und Technologie an die Spitze der Kategorie. Der stärkste homologierte 220 PS Motor der Welt, die voll ausgestattete a-PRC (Aprilia Performance Ride Control) Elektronik, das premium Öhlins Smart EC 2.0 Fahrwerk, das atemberaubende Design und die im Windkanal entwickelte funktionale Aerodynamik sorgen für ein kompromissloses Fahrerlebnis. ',
+    'V4',                                           -- motorytyp
+    1099,                                            -- hubraum_ccm
+    2009,                                           -- baujahr_beginn
+    null,                                           -- baujahr_ende
+    null                                            -- vorgaenger_id
+), (
+    4,                                              -- motorrad_baureihe_id
+    2,                                              -- motorrad_hersteller_id
+    'Tuono V4 APRC',                                -- bezeichnung
+    'Übersicht mit KI Die Aprilia Tuono V4 APRC ist ein Naked Bike, das für seine aggressive Leistung und fortschrittliche Elektronik bekannt ist. Sie basiert auf der Aprilia RSV4, einem Superbike, und bietet ein aufrechtes Fahrerlebnis mit Rennsport-Feeling. Herzstück ist der 65-Grad-V4-Motor, der mit seinen 167 PS und 111 Nm Drehmoment für ordentlich Vortrieb sorgt.',
+    'V4',                                           -- motorytyp
+    999,                                            -- hubraum_ccm
+    2001,                                           -- baujahr_beginn
+    2014,                                           -- baujahr_ende
+    null                                            -- vorgaenger_id    
+), (
+    5,                                              -- motorrad_baureihe_id
+    2,                                              -- motorrad_hersteller_id
+    'Tuono V4 1100',                                -- bezeichnung
+    'Die Aprilia Tuono V4 kombiniert sportliche Performance mit außergewöhnlicher Fahrbarkeit auf der Straße. Noch entschlossener und vielseitiger als je zuvor, überzeugt sie mit ihrem 180 PS starken V4-Motor der Euro-5+-Norm, einer Ergonomie, die sofort Vertrauen schafft, einem Design mit integrierten Winglets für mehr Stabilität und einem individuell anpassbaren a-PRC-Elektronikpaket.',
+    'V4',                                           -- motorytyp
+    1077,                                           -- hubraum_ccm
+    2015,                                           -- baujahr_beginn
+    null,                                           -- baujahr_ende
+    4                                               -- vorgaenger_id    
+), (
+    6,                                              -- motorrad_baureihe_id
+    3,                                              -- motorrad_hersteller_id
+    'S-Baureihe',                                   -- bezeichnung
+    'Alle S-Maschinen haben einen Vierzylinder-Reihenmotor und vier Ventile pro Zylinder. Sie sind auf extreme Sportlichkeit gezüchtet und als Tourenmotorräder mangels Gepäckmöglichkeiten fast nicht zu nutzen. Ihr Revier ist das anspruchsvolle Landstraßen-Fahren und die Rennstrecke.',
+    'V4',                                           -- motorytyp
+    999,                                            -- hubraum_ccm
+    2009,                                           -- baujahr_beginn
+    null,                                           -- baujahr_ende
+    null                                            -- vorgaenger_id    
+), (
+    7,                                              -- motorrad_baureihe_id
+    5,                                              -- motorrad_hersteller_id
+    'Panigale V4S' ,                                -- bezeichnung
+    'Form und Funktion verschmelzen zu einem neuen Level an Performance - weit über die bloße Summe moderner Technologien hinaus. Die neue Panigale V4 ist das Serienmotorrad, das der MotoGP am nächsten kommt. Mit technischen Lösungen direkt aus der Weltmeisterklasse bringt sie ein Fahrerlebnis auf die Straße, das dem der Profis erstaunlich nahekommt.',
+    'V4',                                           -- motorytyp
+    1103,                                           -- hubraum_ccm
+    2018,                                           -- baujahr_beginn
+    null,                                           -- baujahr_ende
+    null                                            -- vorgaenger_id    
+), (
+    8,                                              -- motorrad_baureihe_id
+    6,                                              -- motorrad_hersteller_id
+    'Sportster S',                                   -- bezeichnung
+    'Das Herz der Sportster® S ist der mächtige, leistungsstarke Revolution® Max 1250T Motor, der mit 90 kW bei 7500 U/min und 125 Nm Drehmoment für Begeisterung sorgt. Mit elektronischer Fahrerassistenz, optimiertem Handling und niedrigem Gewicht dreht sich bei dieser Sportster der nächsten Generation alles um Performance anstatt um Zurückhaltung.',
+    'V2',                                           -- motorytyp
+    1252,                                           -- hubraum_ccm
+    2021,                                           -- baujahr_beginn
+    null,                                           -- baujahr_ende
+    null                                            -- vorgaenger_id    
+), (
+    9,                                             -- motorrad_baureihe_id
+    7,                                              -- motorrad_hersteller_id
+    'CBR 900 RR',                                   -- bezeichnung
+    'Der Name Fireblade steht für eine ganze Motorrad-Baureihe, welche 1992 mit der CBR 900 RR Fireblade begründet wurde. Seit 2004 hat sich der Name hubraumbedingt in CBR 1000 RR Fireblade geändert, wobei Honda die Verkaufsbezeichnung in Deutschland mittlerweile auf Fireblade reduziert hat.',
+    'R4',                                           -- motorytyp
+    899,                                            -- hubraum_ccm
+    1992,                                           -- baujahr_beginn
+    2004,                                           -- baujahr_ende
+    null                                            -- vorgaenger_id    
+), (
+    10,                                             -- motorrad_baureihe_id
+    7,                                              -- motorrad_hersteller_id
+    'CBR 1000 RR',                                  -- bezeichnung
+    'Kein Zweifel, die Heimat der CBR1000RR-R Fireblade SP ist die Rennstrecke. Sie startet in der gleichen Klasse wie die normale Fireblade, unterscheidet sich von dieser jedoch durch Öhlins Smart Electronic Control (S-EC)-Fahrwerk, den Brembo-Hauptzylinder, den Bremshebel, die vorderen und hinteren Bremssättel und den serienmäßigen Quickshifter. Der Motor mit „Semi-Cam“-Nockenwellenantrieb zeichnet sich durch eine in dieser Klasse unerreichte Spitzenleistung von 160 kW aus und sorgt jetzt im unteren und mittleren Drehzahlbereich für ein noch höhere Beschleunigung. Auch die HSTC-Traktionskontrolle (Honda Selectable Torque Control) wurde überarbeitet. Die mit einer Lichtanlage, Blinkern und SMART Key ausgestattete Fireblade SP ist uneingeschränkt straßenzugelassen - und trotzdem ein ultimatives Rennmotorrad. Eines, das den Adrenalinspiegel in jeder Kurve in die Höhe schnellen lässt.',
+    'R4',                                           -- motorytyp
+    998,                                            -- hubraum_ccm
+    2004,                                           -- baujahr_beginn
+    null,                                           -- baujahr_ende
+    10                                              -- vorgaenger_id    
+), (
     11,                                             -- motorrad_baureihe_id
     8,                                              -- motorrad_hersteller_id
     '701',                                          -- bezeichnung

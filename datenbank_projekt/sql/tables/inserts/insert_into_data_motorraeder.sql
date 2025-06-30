@@ -8,10 +8,10 @@ insert into data_motorraeder(
     name,
     baujahr,
     leistung_kw,
-    drehmoment_nm,
     0_auf_100_s,
     hoechstgeschwindigkeit_kmh,
     verbrauch_kml,
+    drehmoment_nm,
     laenge_mm,
     breite_mm,
     hoehe_mm,
@@ -317,7 +317,7 @@ insert into data_motorraeder(
     null,                                                                   -- hoehe_mm
     830,                                                                    -- sitzhoehe_mm
     185,                                                                    -- gewicht_kg
-    197903.00                                                                -- preis_euro
+    19790.00                                                                -- preis_euro
 ), (
     16,                                                                     -- motorrad_id
 
