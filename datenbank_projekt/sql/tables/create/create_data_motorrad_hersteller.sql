@@ -8,10 +8,10 @@ create table data_motorrad_hersteller (
     name                                    varchar(256) not null comment 'Name des Herstellers',
     beschreibung                            text not null comment 'Beschreibung des Herstellers',
     herkunftsland_id                        int not null comment 'Herkunfsland Id des Herstellers. Fremdschlüssel von cmn_laender',
-    gruendungsjahr                          int comment 'Grundjüngsjahr des Herstellers',
-    aktiv                                   char(1) not null check(aktiv in ('J', 'N')) comment 'Aktivität des Herstellers. (J = Ja, N = Nein)',
+    gruendungsjahr                          int comment 'Gründungsjahr des Herstellers',
+    aktiv                                   char(1) not null comment 'Aktivität des Herstellers. (J = Ja, N = Nein)',
     logo                                    blob comment 'Logo des Herstellers',
-    logo_mime                               varchar(16) check(logo_mime in ('image/jpg', 'image/png')) comment 'Mime type des Logos des Herstellers. Erlaubt sind JPG und PNG',
+    logo_mime_type                          varchar(16) comment 'Mime type des Logos des Herstellers. Erlaubt sind JPG und PNG',
 
     
     constraint data_motorrad_hersteller_pk primary key (motorrad_hersteller_id),

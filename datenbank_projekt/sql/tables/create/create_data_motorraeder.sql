@@ -23,7 +23,7 @@ create table data_motorraeder (
     gewicht_kg                              decimal(6,2) comment 'Gewicht (kg) des Motorrads',
     preis_euro                              decimal(10,2) comment 'Preis (€) des Motorrads',
     bild                                    blob comment 'Logo des Motorrads',
-    bild_mime                               varchar(16) check(bild_mime in ('image/jpg', 'image/png')) comment 'Mime type des Bildes des Motorrads. Erlaubt sind JPG und PNG',
+    bild_mime                               varchar(16) comment 'Mime type des Bildes des Motorrads. Erlaubt sind JPG und PNG',
     
     constraint data_motorraeder_pk primary key (motorrad_id),
     

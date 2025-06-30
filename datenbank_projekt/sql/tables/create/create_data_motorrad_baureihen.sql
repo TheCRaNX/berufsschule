@@ -13,7 +13,7 @@ create table data_motorrad_baureihen (
     hubraum_ccm                             int not null comment 'Hubraum der Motorrad Baureihe',
     baujahr_beginn                          int comment 'Baurjahr beginn der Motorrad Baureihe',
     baujahr_ende                            int comment 'Baurjahr ende der Motorrad Baureihe',
-    nachfolger_id                           int comment 'Nachfolger der Motorrad Baureihe. Fremdschlüssel von data_motorrad_baureihen',
+    vorgaenger_id                           int comment 'Nachfolger der Motorrad Baureihe. Fremdschlüssel von data_motorrad_baureihen',
 
     
     constraint data_motorrad_baureihen_pk primary key (motorrad_baureihe_id),
@@ -23,8 +23,8 @@ create table data_motorrad_baureihen (
         on update cascade
         on delete cascade,
     
-    constraint data_motorrad_baureihen_nachfolger_id_fk 
-        foreign key (nachfolger_id) references data_motorrad_baureihen (motorrad_baureihe_id)
+    constraint data_motorrad_baureihen_vorgaenger_id_fk 
+        foreign key (vorgaenger_id) references data_motorrad_baureihen (motorrad_baureihe_id)
         on update cascade
         on delete cascade
 ) comment = 'Tabelle zum speichern von Daten über Motorrad Baureihen.';
@@ -39,4 +39,4 @@ create index idx_data_motorrad_baureihen_baujahr_beginn on data_motorrad_baureih
 
 create index idx_data_motorrad_baureihen_baujahr_ende on data_motorrad_baureihen (baujahr_ende);
 
-create index idx_data_motorrad_baureihen_nachfolger_id on data_motorrad_baureihen (nachfolger_id);
+create index idx_data_motorrad_baureihen_vorgaenger_id on data_motorrad_baureihen (vorgaenger_id);

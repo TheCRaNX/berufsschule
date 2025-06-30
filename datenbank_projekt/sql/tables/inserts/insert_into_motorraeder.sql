@@ -230,7 +230,7 @@ insert into data_motorraeder(
     55,                                                                     -- leistung_kw
     4.2,                                                                    -- 0_auf_100_s
     195,                                                                    -- hoechstgeschwindigkeit_kmh
-    24.39                                                                   -- verbrauch_kml
+    24.39,                                                                  -- verbrauch_kml
     73.5,                                                                    -- drehmoment_nm
     2194,                                                                   -- laenge_mm
     814,                                                                    -- breite_mm
@@ -427,7 +427,7 @@ insert into data_motorraeder(
 
     'Yamaha R1 GYTR',                                                       -- name
     2025,                                                                   -- baujahr
-    147  ,                                                                  -- leistung_kw
+    147,                                                                    -- leistung_kw
     3.2,                                                                    -- 0_auf_100_s
     299,                                                                    -- hoechstgeschwindigkeit_kmh
     13.8,                                                                   -- verbrauch_kml
